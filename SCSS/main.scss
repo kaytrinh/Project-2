@@ -1,0 +1,87 @@
+@import '_variables';
+
+
+body{
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+%remove-margins{
+  margin: 0;
+}
+
+
+h1, h3, h4, h5{
+  @extend %remove-margins;
+}
+
+h1{
+font-size: 10rem;
+}
+
+h3{
+  font-size: 40px;
+}
+h4{
+  font-size: 25px;
+}
+h5{
+  margin: 0;
+}
+
+.container {
+
+  h3, h4, h5 {
+    color: $font-color1;
+  }
+}
+
+.links{
+  a{
+    text-decoration: none;
+  }
+  h5{
+
+    &.basic-link{
+      color: white;
+    }
+    &:hover{
+      color: $hover-color1;
+    }
+    &:active{
+      opacity: .5;
+    }
+  }
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+}
+
+.row1,.row2 {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: white;
+  margin-left: 50px ;
+  margin-right: 50px;
+  padding: 20px;
+}
+
+.row1{
+  margin-top: 50px;
+}
+
+.row2{
+  margin-bottom: 50px;
+}
+
+.container{
+  background-color: $background-color2;
+  margin-right: 40px;
+  width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+}
